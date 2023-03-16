@@ -30,11 +30,11 @@ class NetflixService {
         movies.add(movie);
     }
 
-    public void createAccount(String username, String password)
+    public void createAccount(User user)
     {
         // Implement create account logic here
 
-        User user = new User(username , password);
+
         users.add(user);
         System.out.println("Your account has been successfully created");
 
@@ -75,20 +75,105 @@ class NetflixService {
         return false;
     }
 
-    public ArrayList<TVShow> searchByTitle(String title) {
+    //===========================================================================
+
+    //search
+
+    public ArrayList<TVShow> searchByTitleForTvShow(String title) {
         // Implement search by title logic here
-        return null;
+        ArrayList <TVShow> showTvShow = new ArrayList<TVShow>();
+
+        for (TVShow i : tvShows)
+        {
+            if( i.getTitle().contains(title))
+            {
+                showTvShow.add(i);
+            }
+        }
+
+        return showTvShow;
+
     }
 
-    public ArrayList<TVShow> searchByGenre(String genre) {
-        // Implement search by genre logic here
-        return null;
+    public ArrayList<TVShow> searchByGenreForTvShow(String genre)
+    {
+        ArrayList <TVShow> showTvShow = new ArrayList<TVShow>();
+
+        for (TVShow i : tvShows)
+        {
+            if( i.getGenre().contains(genre))
+            {
+                showTvShow.add(i);
+            }
+        }
+
+        return showTvShow;
     }
 
-    public ArrayList<TVShow> searchByReleaseYear(int year) {
-        // Implement search by release year logic here
-        return null;
+    public ArrayList<TVShow> searchByReleaseYearForTvShow(int year)
+    {
+        ArrayList <TVShow> showTvShow = new ArrayList<TVShow>();
+
+        for (TVShow i : tvShows)
+        {
+            if( i.getYear() == year)
+            {
+                showTvShow.add(i);
+            }
+        }
+
+        return showTvShow;
     }
+
+
+//------------------------------------------------------------------------------
+    public ArrayList<Movie> searchByTitleForMovie(String title) {
+        // Implement search by title logic here
+        ArrayList <Movie> showMovie = new ArrayList<Movie>();
+
+        for (Movie i : movies)
+        {
+            if( i.getTitle().contains(title))
+            {
+                showMovie.add(i);
+            }
+        }
+
+        return showMovie;
+
+    }
+
+    public ArrayList<Movie> searchByGenreForMovie(String genre)
+    {
+        ArrayList <Movie> showMovie = new ArrayList<Movie>();
+
+        for (Movie i : movies)
+        {
+            if( i.getGenre().contains(genre))
+            {
+                showMovie.add(i);
+            }
+        }
+
+        return showMovie;
+    }
+
+    public ArrayList<Movie> searchByReleaseYearForMovie(int year)
+    {
+        ArrayList <Movie> showMovie = new ArrayList<Movie>();
+
+        for (Movie i : movies)
+        {
+            if( i.getYear() == year)
+            {
+                showMovie.add(i);
+            }
+        }
+
+        return showMovie;
+    }
+
+
 
 
 
