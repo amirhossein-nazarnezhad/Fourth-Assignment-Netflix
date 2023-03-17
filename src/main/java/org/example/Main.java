@@ -485,6 +485,21 @@ public class Main {
             TVShow tvShow = new TVShow(title , genre , year , duration , rating);
 
             netflixService.addTVShow(tvShow);
+            System.out.println("do you want continue or finish?");
+            System.out.println("1- continue");
+            System.out.println("2- finish");
+
+            int num = input.nextInt();
+
+            if(num == 1)
+            {
+                userMenu();
+            }
+
+            else if(num == 2)
+            {
+                System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+            }
         }
 
         else if (number2 == 2)
@@ -503,7 +518,7 @@ public class Main {
 
             //--------------------------------------------------
 
-            String duration= "jdcjn";
+            String duration= "duration";
 
             //---------------------------------------------------
             System.out.println("please enter rating of Movie  1-10");
@@ -512,6 +527,22 @@ public class Main {
             Movie movie = new Movie(title , genre , year , duration  , rating , length);
 
             netflixService.addMovie(movie);
+            System.out.println("do you want continue or finish?");
+            System.out.println("1- continue");
+            System.out.println("2- finish");
+
+            int num = input.nextInt();
+
+            if(num == 1)
+            {
+                userMenu();
+            }
+
+            else if(num == 2)
+            {
+                System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+            }
+
         }
 
         else if(number2 == 3)
