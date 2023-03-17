@@ -13,9 +13,7 @@ public class Main {
     //===================================================================
     public static void main(String[] args)
     {
-
         runMenu();
-
     }
 
     //=================================================================
@@ -87,12 +85,7 @@ public class Main {
 
     }
 
-    //===========================================================================================
 
-    public static void getUser()
-    {
-
-    }
 
     //=============================================================================================
 
@@ -420,7 +413,7 @@ public class Main {
 
         else if( number == 2)
         {
-//--------------------------------------------------------------esm tabe ha bayad avaz beshe
+//--------------------------------------------------------------
 
 //favorites
 
@@ -444,7 +437,7 @@ public class Main {
                 {
                     System.out.println("Please enter the desired title");
                     String title = input.next();
-                    netflixService.searchByTitleForMovie(title);///./././././././././
+                    System.out.println(User.searchByTitleForMovie(title));///./././././././././done
 
                     System.out.println("do you want continue or finish?");
                     System.out.println("1- continue");
@@ -467,7 +460,7 @@ public class Main {
                 {
                     System.out.println("Please enter the desired Genre");
                     String Genre = input.next();
-                    netflixService.searchByGenreForMovie(Genre);///././././././
+                    System.out.println(User.searchByGenreForMovie(Genre));///././././././done
 
                     System.out.println("do you want continue or finish?");
                     System.out.println("1- continue");
@@ -490,7 +483,7 @@ public class Main {
                 {
                     System.out.println("Please enter the desired ReleaseYear");
                     int year = input.nextInt();
-                    netflixService.searchByReleaseYearForMovie(year);//././././././
+                    System.out.println(User.searchByReleaseYearForMovie(year));//././././././done
 
                     System.out.println("do you want continue or finish?");
                     System.out.println("1- continue");
@@ -535,7 +528,7 @@ public class Main {
                 {
                     System.out.println("Please enter the desired title");
                     String title = input.next();
-                    netflixService.searchByTitleForTvShow(title);//.//./././.
+                    System.out.println(User.searchByTitleForTvShow(title));//.//./././.done
 
                     System.out.println("do you want continue or finish?");
                     System.out.println("1- continue");
@@ -558,7 +551,7 @@ public class Main {
                 {
                     System.out.println("Please enter the desired Genre");
                     String Genre = input.next();
-                    netflixService.searchByGenreForTvShow(Genre);///./././././
+                    System.out.println(User.searchByGenreForTvShow(Genre));///./././././done
 
                     System.out.println("do you want continue or finish?");
                     System.out.println("1- continue");
@@ -581,7 +574,7 @@ public class Main {
                 {
                     System.out.println("Please enter the desired ReleaseYear");
                     int year = input.nextInt();
-                    netflixService.searchByReleaseYearForTvShow(year);//./././././
+                    System.out.println(User.searchByReleaseYearForTvShow(year));//./././././done
 
                     System.out.println("do you want continue or finish?");
                     System.out.println("1- continue");
@@ -771,6 +764,23 @@ public class Main {
 
             if(number3 == 1)
             {
+                System.out.println(User.viewMovieFavorites());
+
+                System.out.println("do you want continue or finish?");
+                System.out.println("1- continue");
+                System.out.println("2- finish");
+
+                int num = input.nextInt();
+
+                if(num == 1)
+                {
+                    userMenu();
+                }
+
+                else if(num == 2)
+                {
+                    System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                }
 
             }
 
@@ -798,8 +808,23 @@ public class Main {
 
             if(number3 == 1)
             {
-//                User user ;
-//                user.viewTvShowFavorites();  //-----=-=-=-=-=-========--==-=-= last =-=-=-=-==-=-=-=-===--=
+                System.out.println(User.viewTvShowFavorites());
+
+                System.out.println("do you want continue or finish?");
+                System.out.println("1- continue");
+                System.out.println("2- finish");
+
+                int num = input.nextInt();
+
+                if(num == 1)
+                {
+                    userMenu();
+                }
+
+                else if(num == 2)
+                {
+                    System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                }
             }
 
             else if(number3 == 2)

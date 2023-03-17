@@ -32,8 +32,8 @@ class User {
 
     //array lists favorite
 
-    ArrayList <TVShow> favoriteTvShow = new ArrayList<TVShow>();
-    ArrayList <Movie> favoriteMovie = new ArrayList<Movie>();
+    static ArrayList <TVShow> favoriteTvShow = new ArrayList<TVShow>();
+    static ArrayList <Movie> favoriteMovie = new ArrayList<Movie>();
 
     //=========================================================================
 
@@ -41,7 +41,7 @@ class User {
 
 
     //tv show
-    public ArrayList<TVShow> searchByTitleForTvShow(String title)
+    public static ArrayList<TVShow> searchByTitleForTvShow(String title)
     {
         // Implement search by title in favorite shows  logic here
 
@@ -58,7 +58,7 @@ class User {
         return showFavoriteTvShow;
 
     }
-    public ArrayList<TVShow> searchByGenreForTvShow(String genre)
+    public static ArrayList<TVShow> searchByGenreForTvShow(String genre)
     {
         // Implement search by genre in favorite shows  logic here
         ArrayList <TVShow> showFavoriteTvShow = new ArrayList<TVShow>();
@@ -77,7 +77,7 @@ class User {
 
 
 
-    public ArrayList<TVShow> searchByReleaseYearForTvShow(int year)
+    public static ArrayList<TVShow> searchByReleaseYearForTvShow(int year)
     {
         // Implement search by release year in favorite shows logic here
         ArrayList <TVShow> showFavoriteTvShow = new ArrayList<TVShow>();
@@ -100,7 +100,7 @@ class User {
 
 //movie
 
-    public ArrayList<Movie> searchByTitleForMovie(String title)
+    public static ArrayList<Movie> searchByTitleForMovie(String title)
     {
         // Implement search by title in favorite shows  logic here
         ArrayList <Movie> showFavoriteMovie = new ArrayList<Movie>();
@@ -117,7 +117,7 @@ class User {
         
         
     }
-    public ArrayList<Movie> searchByGenreForMovie(String genre)
+    public static ArrayList<Movie> searchByGenreForMovie(String genre)
     {
         // Implement search by genre in favorite shows  logic here
         ArrayList <Movie> showFavoriteMovie = new ArrayList<Movie>();
@@ -134,7 +134,7 @@ class User {
 
     }
 
-    public ArrayList<Movie> searchByReleaseYearForMovie(int year)
+    public static ArrayList<Movie> searchByReleaseYearForMovie(int year)
     {
         // Implement search by release year in favorite shows logic here
         ArrayList <Movie> showFavoriteMovie = new ArrayList<Movie>();
@@ -183,7 +183,7 @@ class User {
     {
         favoriteTvShow.add(tvShow);
     }
-    public ArrayList<TVShow> viewTvShowFavorites()
+    public static ArrayList<TVShow> viewTvShowFavorites()
     {
         return favoriteTvShow;
     }
@@ -193,7 +193,7 @@ class User {
     {
         favoriteMovie.add(movie);
     }
-    public ArrayList<Movie> viewMovieFavorites()
+    public static ArrayList<Movie> viewMovieFavorites()
     {
         return favoriteMovie;
     }
