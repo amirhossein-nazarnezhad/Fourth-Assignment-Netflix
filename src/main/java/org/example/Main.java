@@ -238,6 +238,22 @@ public class Main {
                             System.out.println("Please enter the desired title");
                             String title = input.next();
                             System.out.println(netflixService.searchByTitleForMovie(title));//--[]
+
+                            System.out.println("do you want continue or finish?");
+                            System.out.println("1- continue");
+                            System.out.println("2- finish");
+
+                            int num = input.nextInt();
+
+                            if(num == 1)
+                            {
+                                userMenu();
+                            }
+
+                            else if(num == 2)
+                            {
+                                System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                            }
                         }
 
                         else if(number2 == 2)
@@ -245,6 +261,22 @@ public class Main {
                             System.out.println("Please enter the desired Genre");
                             String Genre = input.next();
                             System.out.println(netflixService.searchByGenreForMovie(Genre));//--[]
+
+                            System.out.println("do you want continue or finish?");
+                            System.out.println("1- continue");
+                            System.out.println("2- finish");
+
+                            int num = input.nextInt();
+
+                            if(num == 1)
+                            {
+                                userMenu();
+                            }
+
+                            else if(num == 2)
+                            {
+                                System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                            }
                         }
 
                         else if(number2 == 3)
@@ -252,6 +284,22 @@ public class Main {
                             System.out.println("Please enter the desired ReleaseYear");
                             int year = input.nextInt();
                             System.out.println(netflixService.searchByReleaseYearForMovie(year));//--[]
+
+                            System.out.println("do you want continue or finish?");
+                            System.out.println("1- continue");
+                            System.out.println("2- finish");
+
+                            int num = input.nextInt();
+
+                            if(num == 1)
+                            {
+                                userMenu();
+                            }
+
+                            else if(num == 2)
+                            {
+                                System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                            }
                         }
 
                         else if(number2 == 4)
@@ -281,6 +329,22 @@ public class Main {
                             System.out.println("Please enter the desired title");
                             String title = input.next();
                             System.out.println(netflixService.searchByTitleForTvShow(title));//--[]
+
+                            System.out.println("do you want continue or finish?");
+                            System.out.println("1- continue");
+                            System.out.println("2- finish");
+
+                            int num = input.nextInt();
+
+                            if(num == 1)
+                            {
+                                userMenu();
+                            }
+
+                            else if(num == 2)
+                            {
+                                System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                            }
                         }
 
                         else if(number2 == 2)
@@ -288,6 +352,22 @@ public class Main {
                             System.out.println("Please enter the desired Genre");
                             String Genre = input.next();
                             System.out.println(netflixService.searchByGenreForTvShow(Genre));//--[]
+
+                            System.out.println("do you want continue or finish?");
+                            System.out.println("1- continue");
+                            System.out.println("2- finish");
+
+                            int num = input.nextInt();
+
+                            if(num == 1)
+                            {
+                                userMenu();
+                            }
+
+                            else if(num == 2)
+                            {
+                                System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                            }
                         }
 
                         else if(number2 == 3)
@@ -295,6 +375,22 @@ public class Main {
                             System.out.println("Please enter the desired ReleaseYear");
                             int year = input.nextInt();
                             System.out.println(netflixService.searchByReleaseYearForTvShow(year));//--[]
+
+                            System.out.println("do you want continue or finish?");
+                            System.out.println("1- continue");
+                            System.out.println("2- finish");
+
+                            int num = input.nextInt();
+
+                            if(num == 1)
+                            {
+                                userMenu();
+                            }
+
+                            else if(num == 2)
+                            {
+                                System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                            }
                         }
 
                         else if(number2 == 4)
@@ -349,6 +445,22 @@ public class Main {
                     System.out.println("Please enter the desired title");
                     String title = input.next();
                     netflixService.searchByTitleForMovie(title);///./././././././././
+
+                    System.out.println("do you want continue or finish?");
+                    System.out.println("1- continue");
+                    System.out.println("2- finish");
+
+                    int num = input.nextInt();
+
+                    if(num == 1)
+                    {
+                        userMenu();
+                    }
+
+                    else if(num == 2)
+                    {
+                        System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                    }
                 }
 
                 else if(number2 == 2)
@@ -356,6 +468,22 @@ public class Main {
                     System.out.println("Please enter the desired Genre");
                     String Genre = input.next();
                     netflixService.searchByGenreForMovie(Genre);///././././././
+
+                    System.out.println("do you want continue or finish?");
+                    System.out.println("1- continue");
+                    System.out.println("2- finish");
+
+                    int num = input.nextInt();
+
+                    if(num == 1)
+                    {
+                        userMenu();
+                    }
+
+                    else if(num == 2)
+                    {
+                        System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                    }
                 }
 
                 else if(number2 == 3)
@@ -363,6 +491,22 @@ public class Main {
                     System.out.println("Please enter the desired ReleaseYear");
                     int year = input.nextInt();
                     netflixService.searchByReleaseYearForMovie(year);//././././././
+
+                    System.out.println("do you want continue or finish?");
+                    System.out.println("1- continue");
+                    System.out.println("2- finish");
+
+                    int num = input.nextInt();
+
+                    if(num == 1)
+                    {
+                        userMenu();
+                    }
+
+                    else if(num == 2)
+                    {
+                        System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                    }
                 }
 
                 else if(number2 == 4)
@@ -392,6 +536,22 @@ public class Main {
                     System.out.println("Please enter the desired title");
                     String title = input.next();
                     netflixService.searchByTitleForTvShow(title);//.//./././.
+
+                    System.out.println("do you want continue or finish?");
+                    System.out.println("1- continue");
+                    System.out.println("2- finish");
+
+                    int num = input.nextInt();
+
+                    if(num == 1)
+                    {
+                        userMenu();
+                    }
+
+                    else if(num == 2)
+                    {
+                        System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                    }
                 }
 
                 else if(number2 == 2)
@@ -399,6 +559,22 @@ public class Main {
                     System.out.println("Please enter the desired Genre");
                     String Genre = input.next();
                     netflixService.searchByGenreForTvShow(Genre);///./././././
+
+                    System.out.println("do you want continue or finish?");
+                    System.out.println("1- continue");
+                    System.out.println("2- finish");
+
+                    int num = input.nextInt();
+
+                    if(num == 1)
+                    {
+                        userMenu();
+                    }
+
+                    else if(num == 2)
+                    {
+                        System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                    }
                 }
 
                 else if(number2 == 3)
@@ -406,6 +582,22 @@ public class Main {
                     System.out.println("Please enter the desired ReleaseYear");
                     int year = input.nextInt();
                     netflixService.searchByReleaseYearForTvShow(year);//./././././
+
+                    System.out.println("do you want continue or finish?");
+                    System.out.println("1- continue");
+                    System.out.println("2- finish");
+
+                    int num = input.nextInt();
+
+                    if(num == 1)
+                    {
+                        userMenu();
+                    }
+
+                    else if(num == 2)
+                    {
+                        System.out.println("thanks for use NETFLIX , GOOD BYE :)");
+                    }
                 }
 
                 else if(number2 == 4)
